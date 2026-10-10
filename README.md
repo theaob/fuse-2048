@@ -22,6 +22,10 @@ Other scripts:
 
 Controls: swipe on a phone, arrow keys or WASD on a computer, `Z` for Undo, `Esc` to cancel a power-up.
 
+### GitHub Pages
+
+`.github/workflows/pages.yml` builds the game and publishes `dist/` to GitHub Pages on every push to `main` (or on demand from the Actions tab). One-time setup: in the repo's **Settings › Pages**, set **Source** to **GitHub Actions**. The site is then served at `https://theaob.github.io/fuse-2048/`. The build uses relative paths, so it works under that sub-path.
+
 ## What's in the prototype
 
 - **Endless**: classic 4x4. Energy from merges pays for Undo (2), Bomb (3), Swap (3) and Upgrade (5). Every new highest tile from 256 up offers a pick of 3 perks or gifts (Calm Spawn, Combo Charger, Thrifty, Second Wind, Wide Board, free charges, full energy). Stones start spawning after 512. When the board locks you can watch a (simulated) rewarded ad once per game for Second Wind. The game saves on every move and resumes.
